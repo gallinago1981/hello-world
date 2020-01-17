@@ -15,6 +15,6 @@ public class HelloworldApplication {
 
     @GetMapping(path = "/hello")
     public String hello() {
-        return "Hello World try conflict merge request - branch test";
+        return "Hello World - conflict test";
     }
 }

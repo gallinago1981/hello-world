@@ -6,6 +6,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class HelloController {
 
+<<<<<<< HEAD
   @GetMapping(path = "/hello")
   public String hello() {
     return "Hello World - #4 issue";
@@ -17,4 +18,10 @@ public class HelloController {
   }
 
 
+=======
+  @GetMapping("/conflict")
+  public String conflict() {
+    return "Hello Conflict";
+  }
+>>>>>>> rebaseでconflictを起こす予定
 }

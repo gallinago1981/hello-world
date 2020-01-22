@@ -17,4 +17,9 @@ public class HelloworldApplication {
     public String hello() {
         return "Hello World - #2 issue";
     }
+
+    @GetMapping(path = "/hello2")
+    public String hello2() {
+        return "Hello Java11";
+    }
 }

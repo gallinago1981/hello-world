@@ -5,6 +5,11 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class HelloController {
+
+  @GetMapping("/conflict")
+  public String conflict() {
+    return "Hello Conflict";
+  }
   @GetMapping(path = "/hello")
   public String hello() {
     return "Hello World - #4 issue";

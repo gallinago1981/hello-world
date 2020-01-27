@@ -9,7 +9,12 @@ public class EchoController {
 
   @GetMapping("/echo")
   public ResponseEntity<String> echo() {
-    return ResponseEntity.ok("SUCCESS");
+    return ResponseEntity.ok("OK");
+  }
+
+  @GetMapping("/status")
+  public ResponseEntity<String> status() {
+    return ResponseEntity.ok("running...");
   }
 
 }

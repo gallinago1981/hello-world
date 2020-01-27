@@ -15,9 +15,5 @@ public class HelloController {
     return "Hello Java11";
   }
 
-  @GetMapping(path = "/hello3")
-  public String hello3() {
-    return "Hello 3";
-  }
 
 }

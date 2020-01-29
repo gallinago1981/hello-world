@@ -19,7 +19,7 @@ public class ActuatorController {
 
   @GetMapping("/associate")
   public ResponseEntity<String> associate() {
-    return ResponseEntity.ok("test{aaaa:1}");
+    return ResponseEntity.ok("test{aaaa:2}");
   }
 
 }

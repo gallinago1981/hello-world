@@ -17,4 +17,9 @@ public class EchoController {
     return ResponseEntity.ok("running...");
   }
 
+  @GetMapping("/associate")
+  public ResponseEntity<String> associate() {
+    return ResponseEntity.ok("test{aaaa:1}");
+  }
+
 }

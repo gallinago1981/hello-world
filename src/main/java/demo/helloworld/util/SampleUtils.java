@@ -1,4 +1,4 @@
-package demo.helloworld;
+package demo.helloworld.util;
 
 public class SampleUtils {
 

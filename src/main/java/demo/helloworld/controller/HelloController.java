@@ -8,12 +8,12 @@ public class HelloController {
 
   @GetMapping(path = "/hello")
   public String hello() {
-    return "Hello World";
+    return "Hello World from TOKYO";
   }
 
   @GetMapping(path = "/hello2")
   public String hello2() {
-    return "Hello - new branch";
+    return "Hello";
   }
 
 }

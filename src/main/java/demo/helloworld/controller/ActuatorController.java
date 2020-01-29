@@ -9,7 +9,7 @@ public class ActuatorController {
 
   @GetMapping("/echo")
   public ResponseEntity<String> echo() {
-    return ResponseEntity.ok("OK");
+    return ResponseEntity.ok("SUCCESS");
   }
 
   @GetMapping("/status")

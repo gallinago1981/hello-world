@@ -16,5 +16,4 @@ public class HelloController {
     return "Hello Java11";
   }
 
-
 }

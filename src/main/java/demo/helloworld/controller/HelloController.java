@@ -1,5 +1,6 @@
 package demo.helloworld.controller;
 
+import demo.helloworld.type.MessageType;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -13,7 +14,12 @@ public class HelloController {
 
   @GetMapping(path = "/hello2")
   public String hello2() {
-    return "Hello 2nc";
+    return "Hello 2nd";
+  }
+
+  @GetMapping(path = "/hello3")
+  public String hello3() {
+    return MessageType.get().getMessage();
   }
 
 }

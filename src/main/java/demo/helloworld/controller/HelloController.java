@@ -1,11 +1,16 @@
 package demo.helloworld.controller;
 
+import demo.helloworld.service.MessageService;
 import demo.helloworld.type.MessageType;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class HelloController {
+
+  @Autowired
+  MessageService messageService;
 
   @GetMapping(path = "/hello")
   public String hello() {
@@ -22,4 +27,8 @@ public class HelloController {
     return MessageType.get().getMessage();
   }
 
+  @GetMapping(path = "/hello4")
+  public String hello4() {
+    return messageService.getMessage();
+  }
 }

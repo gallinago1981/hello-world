@@ -10,7 +10,7 @@ public class MessageService {
 
   public String getMessage() {
     long now = LocalDate.now().toEpochDay();
-    int index = BigDecimal.valueOf(now).remainder(BigDecimal.valueOf(MessageType.values().length)).intValue();
+    int index = BigDecimal.valueOf(now).remainder(BigDecimal.valueOf(3)).intValue();
     return MessageType.values()[index].getMessage();
   }
 }

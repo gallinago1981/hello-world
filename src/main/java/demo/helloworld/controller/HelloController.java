@@ -18,7 +18,7 @@ public class HelloController {
 
   @GetMapping(path = "/hello")
   public String hello() {
-    return "Hello World from OSAKA";
+    return "Hello World";
   }
 
   @GetMapping(path = "/hello2")

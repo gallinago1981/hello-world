@@ -4,8 +4,7 @@ public enum TimeZoneType {
 
   MORNING(1),
   NOON(2),
-  EVENING(3),
-  NIGHT(4);
+  EVENING(3);
 
   int value;
   TimeZoneType(int value) {

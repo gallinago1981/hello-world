@@ -22,4 +22,9 @@ public class HelloController {
     return MessageType.get().getMessage();
   }
 
+  @GetMapping(path = "/hello4")
+  public String hello4() {
+    return "Hello 4th";
+  }
+
 }

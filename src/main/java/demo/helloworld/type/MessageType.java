@@ -4,7 +4,8 @@ import java.util.Random;
 
 public enum MessageType {
   TYPE1("Good Morning"),
-  TYPE2("Hello");
+  TYPE2("Hello"),
+  TYPE3("Good Night");
 
   String message;
 
